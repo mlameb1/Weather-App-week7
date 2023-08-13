@@ -1,10 +1,11 @@
 let currentDate = new Date();
 let h3 = document.querySelector("h3");
 let h4 = document.querySelector("h4");
-
 let date = currentDate.getDate();
 let hours = currentDate.getHours();
+if (hours < 10){hours =`0${hours}`};
 let minutes = currentDate.getMinutes();
+if (minutes < 10) {minutes = `0${minutes}`};
 let year = currentDate.getFullYear();
 
 let days = [
